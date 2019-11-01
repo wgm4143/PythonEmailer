@@ -6,7 +6,7 @@ SENDER_EMAIL = "from@email.com"
 SENDER_PASS = "password"
 SENDER_SMTP = "smtp.email.com"
 
-def emailer(target, subject, contents):
+def Email(target, subject, contents):
     msg = MIMEMultipart('alternative')
     msg['From'] = SENDER_EMAIL
     msg['To'] = target
